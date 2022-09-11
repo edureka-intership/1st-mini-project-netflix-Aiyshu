@@ -1,0 +1,173 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0!important;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #282f35;
+    margin: auto;
+}
+
+.navbar-brand{
+    height: 100px;
+    width: 150px;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    background: url('Images/Netflix-Bg.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.bg-img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 120px 100px 250px #000000 , inset -120px -100px 250px #000000;
+}
+
+.navbar{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.navbar img{
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40% , -50%);
+}
+
+.select , .link-text{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60% , -50%);
+}
+
+.right select{
+    background: rgba(0,0,0,.4);
+    color: white;
+    font-weight: bold;
+    border: white 1px solid;
+    font-size: 14px;
+    padding: 0.7% 2%;
+    margin-right: 120px;
+    display: inline-block;
+}
+
+.right a{
+    background-color: #e50914;
+    font-size: 1rem;
+    padding: 0.5% 2%;
+    margin-left: 5px;
+    text-align: center;
+    float: right;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+
+.story-card{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.story-card h1{
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.story-card h2{
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+    max-width: 640px;
+    padding-top: 1rem;
+}
+
+.story-card h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 2rem;
+    padding-bottom: 15px;
+}
+
+.story-card input{
+    left: 0;
+    width: 454px;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.email-form{
+    border: 1;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.email-form .email-box input{
+    height: 60px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+}
+
+.email-form .email-box label{
+    width: 60%;
+    position: absolute;
+    right: 40%;
+    color: #8c8c8c;;
+    padding: 20px 20px 0px 20px;
+    text-align: left;
+    pointer-events: none;
+    font-size: 16px;
+}
+
+input:focus ~ label{
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.email-form a{
+    font-size: 1.525rem;
+    background-color: #e50914;
+    font-weight: 200;
+    border-radius: 0%;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    color: white;
+}
+
+.email-form a:hover{
+    background-color: #f5232d;
+}
+
+
+
+
